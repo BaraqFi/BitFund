@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Signup - BITMASTERY</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
+    <link rel="stylesheet" href="/script.gowns2town.com/vendor/nice-select/css/nice-select.css">
+    <link rel="stylesheet" href="/script.gowns2town.com/vendor/owl-carousel/css/owl.theme.default.css">
+    <link rel="stylesheet" href="/script.gowns2town.com/vendor/owl-carousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/script.gowns2town.com/css/summernote.css">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="/script.gowns2town.com/css/style-dark.css">
+    <style>
+        body {
+            font-family: 'Noto Sans', sans-serif;
+        }
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180198415-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-180198415-1');
+</script>
+<!-- Smartsupp Live Chat script -->
+<script type="text/javascript">
+var _smartsupp = _smartsupp || {};
+_smartsupp.key = '5033d9ec7052da9f53b9e0e3abc94f0d466e99cb';
+window.smartsupp||(function(d) {
+  var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+  s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+  c.type='text/javascript';c.charset='utf-8';c.async=true;
+  c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+})(document);
+</script>
+
+
+</head>
+
+    <script>
+    const countries = [
+    'Albania',
+    'Afghanistan',
+    'Algeria',
+    'Andorra',
+    'Angola',
+    'Antigua and Barbuda', 
+    'Argentina',
+    'Armenia',
+    'Australia',
+    'Austria',
+    'Austrian Empire', 
+    'Azerbaijan',
+    'Baden',
+    'Bahamas',
+    'Bahrain',
+    'Bangladesh',
+    'Barbados',
+    'Bavaria',
+    'Belarus',
+    'Belgium',
+    'Belize',
+    'Benin',
+    'Bolivia',
+    'Bosnia and Herzegovina', 
+    'Botswana',
+    'Brazil',
+    'Brunei',
+    'Brunswick and Lüneburg',
+    'Bulgaria',
+    'Burkina Faso', 
+    'Burma',
+    'Burundi',
+    'Cabo Verde', 
+    'Cambodia',
+    'Cameroon',
+    'Canada',
+    'Cayman Islands', 
+    'Central African Republic', 
+    'Central American Federation', 
+    'Chad',
+    'Chile',
+    'China',
+    'Colombia',
+    'Comoros',
+    'Congo',
+    'Costa Rica',
+    'Cote d’Ivoire',
+    'Croatia',
+    'Cuba',
+    'Cyprus',
+    'Czechia',
+    'Czechoslovakia',
+    'Denmark',
+    'Democratic Republic of the Congo', 
+    'Djibouti',
+    'Dominica',
+    'Dominican Republic', 
+    'Duchy of Parma', 
+    'East Germany (German Democratic Republic)',
+    'Ecuador',
+    'Egypt',
+    'El Salvador',
+    'Equatorial Guinea',
+    'Eritrea',
+    'Estonia',
+    'Eswatini',
+    'Ethiopia',
+    'Federal Government of Germany (1848-49)',
+    'Fiji',
+    'Finland',
+    'France',
+    'Gabon',
+    'Gambia',
+    'Georgia',
+    'Germany',
+    'Ghana',
+    'Grand Duchy of Tuscany',
+    'Greece',
+    'Grenada',
+    'Guatemala',
+    'Guinea',
+    'Guinea-Bissau',
+    'Guyana',
+    'Haiti',
+    'Hanover',
+    'Hanseatic Republics',
+    'Hawaii',
+    'Hesse',
+    'Holy See',
+    'Honduras',
+    'Hungary',
+    'Iceland',
+    'India',
+    'Indonesia',
+    'Iran',
+    'Iraq',
+    'Ireland',
+    'Israel',
+    'Italy',
+    'Jamaica',
+    'Japan',
+    'Jordan',
+    'Kazakhstan',
+    'Kenya',
+    'Kingdom of Serbia Yugoslavia',
+    'Kiribati',
+    'Korea',
+    'Kosovo',
+    'Kuwait',
+    'Kyrgyzstan',
+    'Laos',
+    'Latvia',
+    'Lebanon',
+    'Lesotho',
+    'Lew Chew (Loochoo)',
+    'Liberia',
+    'Libya',
+    'Liechtenstein',
+    'Lithuania',
+    'Luxembourg',
+    'Madagascar',
+    'Malawi',
+    'Malaysia',
+    'Maldives',
+    'Mali',
+    'Malta',
+    'Marshall Islands',
+    'Mauritania',
+    'Mauritius',
+    'Mecklenburg-Schwerin',
+    'Mecklenburg-Strelitz',
+    'Mexico',
+    'Micronesia',
+    'Moldova',
+    'Monaco',
+    'Mongolia',
+    'Montenegro',
+    'Morocco',
+    'Mozambique',
+    'Namibia',
+    'Nassau',
+    'Nauru',
+    'Nepal',
+    'Netherlands',
+    'New Zealand',
+    'Nicaragua',
+    'Niger',
+    'Nigeria',
+    'North German Confederation',
+    'North German Union',
+    'North Macedonia',
+    'Norway',
+    'Oldenburg',
+    'Oman',
+    'Orange Free State',
+    'Pakistan',
+    'Palau',
+    'Panama',
+    'Papal States',
+    'Papua New Guinea',
+    'Paraguay',
+    'Peru',
+    'Philippines',
+    'Piedmont-Sardinia',
+    'Poland',
+    'Portugal',
+    'Qatar',
+    'Republic of Genoa',
+    'Republic of Korea (South Korea)',
+    'Republic of the Congo',
+    'Romania',
+    'Russia',
+    'Rwanda',
+    'Saint Kitts and Nevis',
+    'Saint Lucia',
+    'Saint Vincent and the Grenadines',
+    'Samoa',
+    'San Marino',
+    'Sao Tome and Principe',
+    'Saudi Arabia',
+    'Schaumburg-Lippe',
+    'Senegal',
+    'Serbia',
+    'Seychelles',
+    'Sierra Leone',
+    'Singapore',
+    'Slovakia',
+    'Slovenia',
+    'Solomon Islands',
+    'Somalia',
+    'South Africa',
+    'South Sudan',
+    'Spain',
+    'Sri Lanka',
+    'Sudan',
+    'Suriname',
+    'Sweden',
+    'Switzerland',
+    'Syria',
+    'Tajikistan',
+    'Tanzania',
+    'Texas',
+    'Thailand',
+    'Timor',
+    'Togo',
+    'Tonga',
+    'Trinidad and Tobago',
+    'Tunisia',
+    'Turkey',
+    'Turkmenistan',
+    'Tuvalu',
+    'Two Sicilies',
+    'Uganda',
+    'Ukraine',
+    'Union of Soviet Socialist Republics',
+    'United Arab Emirates',
+    'United Kingdom',
+    'Uruguay',
+    'Uzbekistan',
+    'Vanuatu',
+    'Venezuela',
+    'Vietnam',
+    'Württemberg',
+    'Yemen',
+    'Zambia',
+    'Zimbabwe'
+];
+    active = "";
+    let countryHTML = '';
+    for(var i = 0; i <= countries.length; i++ ){
+        countryHTML += `<option value="${countries[i]}" ${active === countries[i] ? 'selected' : ''}>${countries[i]}</option>`;
+    }
+</script>
+
+
+<div id="preloader">
+    <div class="sk-three-bounce">
+        <div class="sk-child sk-bounce1"></div>
+        <div class="sk-child sk-bounce2"></div>
+        <div class="sk-child sk-bounce3"></div>
+    </div>
+</div>
+
+<div id="main-wrapper">
+
+    <div class="authincation section-padding">
+        <div class="container h-100">
+            <div class="row justify-content-center h-100 align-items-center">
+                <div class="col-xl-5 col-md-6">
+                    <div class="mini-logo text-center my-5">
+                        <a href="/"><img src="images/logo.png" alt=""></a>
+                    </div>
+                    <div class="auth-form card">
+                        <div class="card-header justify-content-center">
+                            <h4 class="card-title">Create your account</h4>
+                        </div>
+                        <div class="card-body">
+                            <form method="post" name="myform" class="signup_validate" action="/signup">
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <label>First Name</label>
+                                            <input type="text" class="form-control" placeholder="firstname" name="firstname" required="true" value= >
+                                        </div>
+                                        <div class="col-6">
+                                            <label>Last Name</label>
+                                            <input type="text" class="form-control" placeholder="lastname" name="lastname" required="true" value=>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <div class="form-group">
+                                    <label>Email</label>
+                                    <input type="email" class="form-control" placeholder="hello@example.com"
+                                        name="email" required="true" value=>
+                                </div>
+                                <div class="form-group">
+                                    <label>Bitcoin Wallet Address</label>
+                                    <input type="text" class="form-control" placeholder="Enter your BTC Wallet Address"
+                                        name="btcwallet" required="true" value=>
+                                </div>
+                                <div class="form-group">
+                                    <label>Nationality</label>
+                                    <div class="input-group">
+                                        <select name="nationality" class="form-control" required="true">
+                                            <option data-display="Select your country" value="select">Select Your Country</option>
+                                            <script>
+                                                document.write(countryHTML);
+                                            </script>
+                                            <option value="Canada">Canada</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Phone Number</label>
+                                    <input type="number" class="form-control" placeholder="Enter your phone number"
+                                        name="phone" required="true" value=>
+                                </div>
+                                <div class="form-group">
+                                    <label>Referral Code</label>
+                                    <input type="text" class="form-control referral" placeholder=""
+                                        name="referredBy" value=>
+                                </div>
+                                <div class="form-group">
+                                    <label>Password</label>
+                                    <input type="password" class="form-control" placeholder="Password"
+                                        name="password" required="true" value=>
+                                </div>
+                                <div class="form-group">
+                                    <label>Confirm Password</label>
+                                    <input type="password" class="form-control" placeholder="Retype Password"
+                                        name="password2" required="true" value=>
+                                </div>
+                                <div class="text-center mt-4">
+                                    <button type="submit" class="btn btn-danger btn-block">Sign up</button>
+                                </div>
+                            </form>
+                            <div class="new-account mt-3">
+                                <p>Already have an account? <a class="text-primary" href="/login">Sign in</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    const url = window.location.href;
+    const captured = /refer=([^&]+)/.exec(url)[1];
+    document.querySelector('.referral').value = captured;
+</script>
+
+
+
+    <script src="/script.gowns2town.com/js/global.js"></script>
+    <script src="/script.gowns2town.com/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="/script.gowns2town.com/vendor/owl-carousel/js/owl.carousel.min.js"></script>
+    <script src="/script.gowns2town.com/js/plugins/owl-carousel-init.js"></script>
+
+    <script src="/script.gowns2town.com/vendor/scrollit/scrollIt.js"></script>
+    <script src="/script.gowns2town.com/js/plugins/scrollit-init.js"></script>
+
+    <script src="/script.gowns2town.com/vendor/apexchart/apexcharts.min.js"></script>
+    <script src="/script.gowns2town.com/vendor/apexchart/apexchart-init.js"></script>
+
+    <script src="/script.gowns2town.com/js/scripts.js"></script>
+    <script src="/script.gowns2town.com/js/summernote.js"></script>
+    <script src="/script.gowns2town.com/js/main.js"></script>
+    
+    
+
+</html>
